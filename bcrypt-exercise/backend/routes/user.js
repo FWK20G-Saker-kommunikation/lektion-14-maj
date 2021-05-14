@@ -5,7 +5,7 @@ const { admin, user } = require('../middleware/auth');
 const { getUser, getAllUsers, 
         changeNewPassword, removeAccount } = require('../controller/userController');
 
-router.get('/', getUser);
+router.get('/', user, getUser);
 
 router.get('/all', admin, getAllUsers);
 

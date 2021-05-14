@@ -53,6 +53,6 @@ function createNewAccount(request, response) {
   response.json(result);
 }
 
-exports.login = login;
-exports.getLoginStatus = getLoginStatus;
-exports.createNewAccount = createNewAccount;
+module.exports.login = login;
+module.exports.getLoginStatus = getLoginStatus;
+module.exports.createNewAccount = createNewAccount;

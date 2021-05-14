@@ -56,7 +56,9 @@ function removeAccount(request, response) {
   response.json(result);
 }
 
-exports.getUser = getUser;
-exports.getAllUsers = getAllUsers;
-exports.changeNewPassword = changeNewPassword;
-exports.removeAccount = removeAccount;
+module.exports.getUser = getUser;
+module.exports.getAllUsers = getAllUsers;
+module.exports.changeNewPassword = changeNewPassword;
+module.exports.removeAccount = removeAccount;
+
+console.log(module.exports);
