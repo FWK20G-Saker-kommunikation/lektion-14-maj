@@ -1,0 +1,39 @@
+{
+  "accounts": [
+    {
+      "username": "Chris",
+      "password": "pwd123",
+      "firstname": "Christoffer",
+      "lastname": "Wallenberg",
+      "email": "chris@wallenberg.com",
+      "role": "admin",
+      "id": "LFhowsZOtldXIkBgnL103"
+    },
+    {
+      "username": "Alice",
+      "password": "$2b$10$O66AwzGMCJTuyBppI46mCe9B/0Z0j2Nzb7.eLPsau762eBwEkGfAm",
+      "email": "alice@lodell.com",
+      "firstname": "Alice",
+      "lastname": "Lodell",
+      "role": "user",
+      "id": "he9wLEfbngXWIkdLPG0V5"
+    },
+    {
+      "username": "Ada",
+      "password": "$2b$10$xPQYncreA1KKyKOZH9Kf6eKf84FvHrbWT1EqteAoAFCs4Jyu6yHYK",
+      "email": "ada@lovelace.com",
+      "firstname": "Ada",
+      "lastname": "Lovelace",
+      "role": "user"
+    },
+    {
+      "username": "Ada2",
+      "password": "$2b$10$cqs.tFYtqgg9VbOAorcRleJSWO5Xu0GdWhiPd/vtqXnh0SGp5H6Lu",
+      "email": "ada2@lovelace.com",
+      "firstname": "Ada",
+      "lastname": "Lovelace",
+      "role": "user",
+      "id": "0a73bslNAgAKkLE9dsYnx"
+    }
+  ]
+}
