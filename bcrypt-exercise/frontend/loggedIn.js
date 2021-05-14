@@ -81,7 +81,7 @@ async function getUserInfo() {
 }
 
 async function isLoggedIn() {
-  const response = await fetch('http://localhost:8000/api/loggedin');
+  const response = await fetch('http://localhost:8000/api/auth/loggedin');
   const data = await response.json();
 
   if (data.loggedIn) {

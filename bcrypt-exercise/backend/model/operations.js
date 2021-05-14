@@ -1,19 +1,9 @@
 const lowdb = require('lowdb');
-const bcrypt = require('bcrypt');
 const FileSync = require('lowdb/adapters/FileSync');
 const adapter = new FileSync('users.json');
 const database = lowdb(adapter);
 
-async function hashPassword(password) {
-  const saltRounds = 10;
-  const hashedPassword = await bcrypt.hash(password, saltRounds);
-  return hashedPassword;
-}
-
-async function comparePassword(password, hash) {
-  const isMatch = await bcrypt.compare(password, hash);
-  return isMatch;
-}
+const { hashPassword, comparePassword } = require('../utils/utils');
 
 function getUserById(cookieId) {
   return database.get('accounts').find({ id: cookieId }).value();

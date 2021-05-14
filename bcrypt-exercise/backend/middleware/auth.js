@@ -1,4 +1,4 @@
-const { getUserById } = require('../database/operations');
+const { getUserById } = require('../model/operations');
 
 function admin(request, response, next) {
   const loggedInId = request.cookies.loggedIn;

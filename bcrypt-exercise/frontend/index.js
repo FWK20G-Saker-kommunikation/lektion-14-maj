@@ -8,7 +8,7 @@ async function login(user, pass) {
     password: pass
   }
 
-  const response = await fetch('http://localhost:8000/api/login', {
+  const response = await fetch('http://localhost:8000/api/auth/', {
     method: 'POST',
     body: JSON.stringify(obj),
     headers: {
@@ -23,7 +23,7 @@ async function login(user, pass) {
 }
 
 async function isLoggedIn() {
-  const response = await fetch('http://localhost:8000/api/loggedin');
+  const response = await fetch('http://localhost:8000/api/auth/loggedin');
   const data = await response.json();
 
   if (data.loggedIn) {

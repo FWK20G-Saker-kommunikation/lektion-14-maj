@@ -7,7 +7,7 @@ const buttonElem = document.querySelector('button');
 
 
 async function createAccount(account) {
-  const response = await fetch('http://localhost:8000/api/create', {
+  const response = await fetch('http://localhost:8000/api/auth/create', {
     method: 'POST',
     body: JSON.stringify(account),
     headers: {
